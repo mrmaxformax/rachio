@@ -1,0 +1,14 @@
+{
+  "name": "Validate Negative scenarios - invalid DeviceID",
+  "description":"",
+  "request": [
+    {
+      "deviceId": "12345567",
+      "method": "GET",
+      "endPoint": "/public/person/",
+      "response": {
+        "status_code": 200
+      }
+    }
+  ]
+}

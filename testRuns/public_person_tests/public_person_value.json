@@ -1,0 +1,107 @@
+{
+  "name": "Validate some static field's value in /public/person/ response",
+  "description":"",
+  "request": [
+    {
+      "method": "GET",
+      "endPoint": "/public/person/",
+      "payload": {"key": "value"},
+      "response": {
+        "status_code": 200,
+        "value": {
+          "roles": [],
+          "managedDevices": [],
+          "email": "rachioqa2@rachio.com",
+          "displayUnit": "US",
+          "fullName": "rachioqa2",
+          "enabled": "True",
+          "id": "a73b3f16-b7ee-4ac1-8322-0b2a5955667d",
+          "username": "rachioqa2",
+
+          "devices[0]['zip']": "80205",
+          "devices[0]['utcOffset']": -25200000,
+          "devices[0]['macAddress']": "80A589E1121E",
+          "devices[0]['flexScheduleRules']": [],
+          "devices[0]['on']": "False",
+          "devices[0]['status']": "ONLINE",
+          "devices[0]['latitude']": 39.7532769,
+          "devices[0]['id']": "38eaeb8a-fc19-4438-96a3-6b265623fdc7",
+          "devices[0]['elevation']":  1588.59619140625,
+          "devices[0]['model']": "8ZR2ULW",
+          "devices[0]['paused']": "False",
+          "devices[0]['createDate']":  1473807921069,
+          "devices[0]['serialNumber']": "VR0538722",
+          "devices[0]['webhooks']": [],
+          "devices[0]['scheduleModeType']": "MANUAL",
+          "devices[0]['name']": "Rachio-E1121E",
+          "devices[0]['timeZone']": "America/Denver",
+          "devices[0]['longitude']":  -104.9915514,
+
+          "devices[0]['zones'][0]['runtime']": 1391,
+          "devices[0]['zones'][0]['maxRuntime']": 10800,
+          "devices[0]['zones'][0]['enabled']": "True",
+          "devices[0]['zones'][0]['imageUrl']": "http://media.rach.io/images/zone/default/default_zone.jpg",
+          "devices[0]['zones'][0]['runtimeNoMultiplier']": 1391,
+          "devices[0]['zones'][0]['lastWateredDuration']": 2177,
+          "devices[0]['zones'][0]['scheduleDataModified']": "False",
+          "devices[0]['zones'][0]['availableWater']": 0.17,
+          "devices[0]['zones'][0]['yardAreaSquareFeet']": 500,
+          "devices[0]['zones'][0]['rootZoneDepth']": 6.0,
+          "devices[0]['zones'][0]['fixedRuntime']": "False",
+          "devices[0]['zones'][0]['saturatedDepthOfWater']": 0.56,
+          "devices[0]['zones'][0]['efficiency']": 0.8,
+          "devices[0]['zones'][0]['managementAllowedDepletion']": 0.5,
+          "devices[0]['zones'][0]['depthOfWater']": 0.51,
+
+
+          "devices[0]['zones'][0]['customNozzle']['name']": "Fixed Spray Head",
+          "devices[0]['zones'][0]['customNozzle']['imageUrl']": "https://s3-us-west-2.amazonaws.com/rachio-api-icons/nozzle/fixed_spray.png",
+          "devices[0]['zones'][0]['customNozzle']['category']": "FIXED_SPRAY_HEAD",
+          "devices[0]['zones'][0]['customNozzle']['inchesPerHour']": 1.5,
+
+          "devices[0]['zones'][0]['customShade']['description']": "6-8 hours of sun",
+          "devices[0]['zones'][0]['customShade']['imageUrl']": "https://s3-us-west-2.amazonaws.com/rachio-api-icons/shade/lots_of_sun.png",
+          "devices[0]['zones'][0]['customShade']['name']": "Lots of sun",
+          "devices[0]['zones'][0]['customShade']['exposure']": "True",
+
+          "devices[0]['zones'][0]['customCrop']['coefficient']": 0.8,
+          "devices[0]['zones'][0]['customCrop']['imageUrl']": "https://s3-us-west-2.amazonaws.com/rachio-api-icons/crop/cool_season_grass.png",
+          "devices[0]['zones'][0]['customCrop']['name']": "Cool Season Grass",
+
+          "devices[0]['zones'][0]['wateringAdjustmentRuntimes']['2']": 1739,
+          "devices[0]['zones'][0]['wateringAdjustmentRuntimes']['5']": 695,
+          "devices[0]['zones'][0]['wateringAdjustmentRuntimes']['3']": 1391,
+          "devices[0]['zones'][0]['wateringAdjustmentRuntimes']['4']": 1043,
+          "devices[0]['zones'][0]['wateringAdjustmentRuntimes']['1']": 2086,
+
+          "devices[0]['zones'][0]['customSlope']['variance']": "ZERO_THREE",
+          "devices[0]['zones'][0]['customSlope']['sortOrder']": "False",
+          "devices[0]['zones'][0]['customSlope']['imageUrl']": "https://s3-us-west-2.amazonaws.com/rachio-api-icons/slope/flat.png",
+          "devices[0]['zones'][0]['customSlope']['name']": "Flat",
+
+          "devices[0]['zones'][0]['customSoil']['infiltrationRate']": 0.35,
+          "devices[0]['zones'][0]['customSoil']['category']": "LOAM",
+          "devices[0]['zones'][0]['customSoil']['lastUpdateDate']": 1473807771775,
+          "devices[0]['zones'][0]['customSoil']['createDate']": 1473807771775,
+          "devices[0]['zones'][0]['customSoil']['editable']": "False",
+          "devices[0]['zones'][0]['customSoil']['percentAvailableWater']": 0.7,
+          "devices[0]['zones'][0]['customSoil']['id']": "31564ae3-90ae-41ab-b0e6-5d6d36b8cc80",
+          "devices[0]['zones'][0]['customSoil']['name']": "Loam",
+          "devices[0]['zones'][0]['customSoil']['imageUrl']": "https://s3-us-west-2.amazonaws.com/rachio-api-icons/soil/loam.png",
+
+          "devices[0]['scheduleRules'][0]['name']": "Water all zones",
+          "devices[0]['scheduleRules'][0]['externalName']": "Water all zones",
+          "devices[0]['scheduleRules'][0]['weatherIntelligenceSensitivity']": 0.125,
+          "devices[0]['scheduleRules'][0]['cycleSoakStatus']": "OFF",
+          "devices[0]['scheduleRules'][0]['seasonalAdjustment']": "False",
+          "devices[0]['scheduleRules'][0]['cycleSoak']": "False",
+          "devices[0]['scheduleRules'][0]['cycles']": "True",
+
+          "devices[0]['scheduleRules'][0]['enabled']": "True",
+          "devices[0]['scheduleRules'][0]['rainDelay']": "True",
+          "devices[0]['scheduleRules'][0]['waterBudget']": "True"
+        }
+      }
+    }
+  ]
+}

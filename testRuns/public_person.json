@@ -1,0 +1,19 @@
+{
+  "token": 123,
+  "testrun_name": "Testing Person API",
+  "global_method": "GET",
+  "global_endPoint": "/public/person/info",
+  "global_headers":
+  {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer TOCKEN HERE"
+  },
+  "testfolder": "public_person_tests/",
+  "testcases": [
+    "public_person_type",
+    "public_person_value",
+    "public_person_invalid_endpoint",
+    "public_person_invalid_auth",
+    "public_person_invalid_deviceID"
+    ]
+}
